@@ -1,0 +1,134 @@
+.main-layout-header {
+    position: relative;
+    z-index: 1;
+    height: $main-layout-header-height;
+
+    &__bar,
+    &__nav {
+        background-color: $color-main-header;
+        border-bottom: 1px solid $color-petroleum;
+    }
+
+    &__bar {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    &__back-logo,
+    &__logo {
+        position: absolute;
+        left: rem(10px);
+        display: flex;
+
+        svg {
+            path {
+                @include transition(fill);
+
+                fill: $color-text;
+            }
+        }
+
+        &:hover {
+            svg {
+                path {
+                    fill: $color-cta;
+                }
+            }
+        }
+    }
+
+    &__back-logo {
+        svg {
+            margin-left: rem(5px);
+            width: rem(9px);
+        }
+    }
+
+    &__logo {
+        &-hidden {
+            position: absolute;
+            opacity: 0;
+        }
+
+        svg {
+            width: rem(16px);
+
+            path {
+                .main-layout-header--nav-open & {
+                    fill: $color-cta;
+                }
+            }
+        }
+    }
+
+    &__title {
+        cursor: default;
+
+        &--has-dropdown {
+            cursor: pointer;
+        }
+    }
+
+    &__page-dropdown-button {
+        position: absolute;
+        right: 0;
+    }
+
+    &__close {
+        position: absolute;
+        right: rem(15px);
+        display: flex;
+
+        svg {
+            width: rem(12px);
+
+            path {
+                fill: $color-text;
+            }
+        }
+    }
+
+    &__page-dropdown,
+    &__nav {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+
+    &__nav {
+        padding: 0 rem(15px);
+        text-align: center;
+    }
+
+    &__nav-item {
+        display: block;
+        color: $color-text;
+        text-decoration: none;
+        font-size: rem(14px);
+        padding: rem(10px) 0;
+
+        &:not(.main-layout-header__nav-item--active) {
+            font-weight: $font-weight-light;
+        }
+
+        &--active {
+            &:hover {
+                color: $color-text;
+            }
+        }
+
+        svg {
+            width: rem(11px);
+            transform: translateX(100%);
+            position: absolute;
+            right: rem(-5px);
+
+            path {
+                fill: $color-text;
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+$transaction-receipt-horizontal-padding: rem(20px);
+
+.transaction-receipt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-bg;
+    border: rem(1px) solid $color-grey;
+    border-radius: rem(10px);
+    padding: rem(10px) $transaction-receipt-horizontal-padding;
+
+    &__hash,
+    &__title {
+        width: calc(100% + 2 * $transaction-receipt-horizontal-padding);
+        text-align: center;
+        margin: 0;
+    }
+
+    &__title {
+        border-bottom: rem(0.5px) solid $color-grey;
+        padding: 0 rem(10px) rem(10px);
+        @include singleline-clamp;
+    }
+
+    &__address {
+        flex-wrap: wrap;
+        word-break: break-all;
+        font-size: rem(8px);
+    }
+
+    &__cost {
+        margin-top: rem(10px);
+    }
+
+    &__parameter {
+        word-break: break-all;
+        white-space: pre-wrap;
+        margin: 0;
+        flex-grow: 1;
+        background-color: $color-input-bg;
+        border: rem(0.5px) solid $color-grey;
+        padding: rem(8px);
+    }
+
+    &__hash {
+        color: $color-text-faded;
+        border-top: rem(0.5px) solid $color-grey;
+        padding-top: rem(5px);
+        font-size: rem(8px);
+        margin-top: rem(10px);
+    }
+
+    &__module-ref {
+        width: rem(180px);
+        overflow-wrap: break-word;
+    }
+}
+
+:where(.transaction-receipt) h5 {
+    margin-top: rem(10px);
+    margin-bottom: 0;
+}
+
+.display-cost {
+    p {
+        color: $color-text-faded;
+        font-size: rem(8px);
+        margin: 0;
+        text-align: center;
+    }
+}

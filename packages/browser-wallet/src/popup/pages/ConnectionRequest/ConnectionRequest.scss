@@ -1,0 +1,17 @@
+.connection-request {
+    background-color: $color-bg;
+    display: block;
+
+    &__url {
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+
+    &__description {
+        font-weight: $font-weight-light;
+    }
+
+    &__connection-box {
+        border-color: $color-blue;
+    }
+}

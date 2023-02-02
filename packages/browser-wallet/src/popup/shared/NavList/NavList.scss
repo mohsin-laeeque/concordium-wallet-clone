@@ -1,0 +1,5 @@
+.nav-list {
+    & > *:not(:last-child) {
+        border-bottom: 1px dotted $color-grey;
+    }
+}

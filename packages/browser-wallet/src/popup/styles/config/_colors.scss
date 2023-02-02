@@ -1,0 +1,72 @@
+// Color definitions
+$color-white: #fff;
+$color-off-white: #fbfbf9;
+$color-black: #000;
+$color-off-black: #181817;
+$color-darker-grey: #727272;
+$color-grey: #979797;
+$color-red: #ff4d4d;
+$color-green: #4ac29e;
+$color-dark-green: #308274;
+$color-blue: #4486ab;
+$color-light-blue: #d9effc;
+$color-salmon: #ff8a8a;
+$color-petroleum: #325d76;
+$color-dark-prussian-blue: #274659;
+
+// Derived
+$color-text-faded: $color-grey;
+$color-success: $color-green;
+$color-error: $color-red;
+$color-danger: $color-red;
+$color-lines: $color-grey;
+$color-passive: $color-grey;
+
+// Mainnet
+$color-cta-mainnet: $color-blue;
+
+// Testnet + others
+$color-cta-othernet: $color-dark-green;
+
+// Light mode
+$color-bg-light: $color-off-white;
+$color-text-light: $color-off-black;
+$color-hover-light: 0 0 0;
+$color-transaction-group-header-light: $color-light-blue;
+$color-transaction-group-header-text-light: $color-blue;
+$color-input-bg-light: $color-white;
+$color-main-header-light: #f4f5f5;
+$color-highlight-mainnet-light: #e0e9ed;
+$color-highlight-testnet-light: #dde9e5;
+
+// Dark mode
+$color-bg-dark: $color-off-black;
+$color-text-dark: $color-off-white;
+$color-hover-dark: 255 255 255;
+$color-transaction-group-header-dark: $color-dark-prussian-blue;
+$color-transaction-group-header-text-dark: $color-light-blue;
+$color-input-bg-dark: $color-black;
+$color-main-header-dark: #111;
+$color-highlight-mainnet-dark: #203e4f;
+$color-highlight-testnet-dark: #1a3d3e;
+
+// Theme variables
+$color-bg: var(--color-bg, $color-bg-light); // off-white/off-black
+$color-text: var(--color-text, $color-text-light); // off-black/off-white
+$color-hover: var(--color-hover, $color-hover-light); // black / white, should be used rgb($color-hover / $alpha)
+$color-cta: var(--color-cta, $color-cta-othernet); // dark-green/blue
+$color-transaction-group-header: var(
+    --color-transaction-group-header,
+    $color-transaction-group-header-light
+); // light-blue/dark-prussian-blue
+$color-transaction-group-header-text: var(
+    --color-transaction-group-header-text,
+    $color-transaction-group-header-text-light
+); // blue/light-blue
+$color-main-header: var(--color-main-header, $color-main-header-light);
+$color-input-bg: var(--color-input-bg, $color-input-bg-light);
+$color-disabled-input-bg: var(--color-disabled-input-bg, $color-main-header-light);
+$color-text-inverted: $color-bg;
+$color-highlight-mainnet: var(--color-highlight-mainnet, $color-highlight-mainnet-light);
+$color-highlight-testnet: var(--color-highlight-testnet, $color-highlight-testnet-light);
+$color-highlight: var(--color-highlight, $color-highlight-testnet);

@@ -1,0 +1,83 @@
+$account-page-actions-height: rem(36px);
+$account-page-details-height-expanded: rem(135px);
+$account-page-details-height-closed: rem(30px);
+$account-page-details-height: var(--details-height, $account-page-details-height-closed);
+
+.account-page {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: calc(100% - #{$account-page-actions-height});
+    }
+
+    &__details {
+        position: relative;
+        width: 100%;
+    }
+
+    &__hide {
+        position: absolute;
+        left: 0;
+        top: rem(2px);
+        z-index: 1;
+    }
+
+    &__routes {
+        width: 100%;
+        height: calc(100% - #{$account-page-details-height});
+        display: flex;
+        justify-content: center;
+        position: relative;
+        overflow: overlay;
+        @include transition(height);
+    }
+
+    &__close {
+        position: absolute;
+        top: rem(10px);
+        right: rem(10px);
+    }
+
+    &__actions {
+        height: $account-page-actions-height;
+    }
+
+    &__connection-box {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: rem(8px);
+        margin-top: rem(5px);
+        border: rem(1px) solid $color-success;
+        border-radius: rem(15px);
+        font-family: $font-family-mono;
+        font-size: rem(8px);
+        padding: rem(2px) rem(5px);
+    }
+
+    &__not-connected {
+        color: $color-text-faded;
+        border-color: $color-passive;
+    }
+
+    &__rejected,
+    &__not-finalized {
+        background-color: $color-bg;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__not-finalized {
+        color: $color-text-faded;
+    }
+
+    &__rejected {
+        color: $color-error;
+    }
+}

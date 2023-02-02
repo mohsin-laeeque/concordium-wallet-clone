@@ -1,0 +1,27 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "noEmit": true,
+        "jsx": "react",
+        "paths": {
+            "@popup/*": ["./src/popup/*"],
+            "@background/*": ["./src/background/*"],
+            "@content/*": ["./src/content/*"],
+            "@inject/*": ["./src/inject/*"],
+            "@shared/*": ["./src/shared/*"],
+            "@assets/*": ["./src/assets/*"],
+            "@concordium/browser-wallet-api": ["../browser-wallet-api/src"],
+            "@concordium/browser-wallet-message-hub": ["../browser-wallet-message-hub/src"],
+            "@concordium/browser-wallet-api-helpers": ["../browser-wallet-api-helpers/src"]
+        }
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    },
+    "include": ["./**/*"],
+    "exclude": ["./../../node_modules/**/*", "./dist/**/*"],
+    "files": ["../../node_modules/@concordium/browser-wallet-api-helpers/lib/extend-window.d.ts"]
+}

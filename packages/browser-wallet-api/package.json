@@ -1,0 +1,21 @@
+{
+    "name": "@concordium/browser-wallet-api",
+    "version": "0.1.0",
+    "description": "API for interfacing with the concordium browser wallet",
+    "main": "index.js",
+    "author": "Concordium Software",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "@concordium/browser-wallet-api-helpers": "workspace:^",
+        "@concordium/common-sdk": "^6.2.0",
+        "buffer": "^6.0.3",
+        "json-bigint": "^1.0.0"
+    },
+    "devDependencies": {
+        "@types/json-bigint": "^1.0.1",
+        "typescript": "^4.3.5"
+    },
+    "scripts": {
+        "build": "tsc"
+    }
+}
