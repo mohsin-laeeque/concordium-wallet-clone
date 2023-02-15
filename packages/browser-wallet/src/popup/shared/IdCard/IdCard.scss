@@ -3,10 +3,11 @@
     border-radius: rem(10px);
     border: 1px solid $color-cta;
     width: rem(196px);
-    height: rem(117px);
+    height: rem(90px);
     overflow: hidden;
-    background-color: $color-bg;
-    color: $color-text;
+    background-color: $color-text;
+    color: $color-bg;
+    // padding: 0 rem(10px);
 
     &--pending {
         border-color: $color-grey;
@@ -23,12 +24,14 @@
     &__header {
         background-color: $color-cta;
         font-size: rem(11px);
+        font-weight: 500;
         text-align: center;
-        color: $color-white;
+        color: $color-bg;
         height: rem(30px);
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        padding: 0 rem(10px);
 
         .id-card--pending & {
             background-color: $color-grey;
@@ -103,12 +106,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: rem(12px);
+        font-size: rem(8px);
         font-weight: $font-weight-light;
 
         .id-card--confirmed &,
         .id-card--rejected & {
-            color: $color-grey;
+            color: $color-bg;
+        }
+
+        .identity-provider-icon {
+            width: rem(10px);
+            height: rem(10px);
         }
     }
 
@@ -124,9 +132,9 @@
         }
 
         .id-card--confirmed & {
-            width: rem(50px);
-            bottom: rem(-9px);
-            right: rem(-10px);
+            width: rem(40px);
+            bottom: rem(9px);
+            left: rem(10px);
 
             svg {
                 opacity: 0.5;

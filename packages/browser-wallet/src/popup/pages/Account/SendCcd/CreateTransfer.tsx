@@ -36,7 +36,7 @@ import {
     trunctateSymbol,
 } from '@shared/utils/token-helpers';
 import { jsonRpcClientAtom } from '@popup/store/settings';
-import CcdIcon from '@assets/svg/concordium.svg';
+import CcdIcon from '@assets/svg/logo-icon.svg';
 import { addToastAtom } from '@popup/state';
 import TokenBalance from '@popup/shared/TokenBalance';
 import Button from '@popup/shared/Button';

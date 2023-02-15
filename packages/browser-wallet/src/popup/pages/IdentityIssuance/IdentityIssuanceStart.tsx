@@ -98,7 +98,7 @@ function IdentityIssuanceStart({ onStart, onError }: InnerProps) {
             <div>
                 {providers.map((p) => (
                     <Button
-                        className="identity-issuance__provider-button flex justify-space-between align-center"
+                        className="identity-issuance__provider-button flex justify-space-start align-center"
                         width="wide"
                         disabled={buttonDisabled}
                         key={p.ipInfo.ipIdentity + p.ipInfo.ipDescription.name}

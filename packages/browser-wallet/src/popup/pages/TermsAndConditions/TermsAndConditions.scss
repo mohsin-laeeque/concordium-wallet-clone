@@ -8,7 +8,7 @@
 
     &__continue-button {
         margin: rem(20px) auto 0;
-        background-color: $color-cta-mainnet;
+        // background-color: $color-cta-mainnet;
     }
 
     &__logos {
@@ -47,8 +47,10 @@
 
     &__terms-and-conditions {
         margin-top: auto;
-        margin-left: rem(14px);
+        margin-left: 0;
         text-align: left;
-        padding: 0 rem(30px);
+        padding: rem(20px);
+        background-color: #1b1926;
+        border-radius: 10px;
     }
 }

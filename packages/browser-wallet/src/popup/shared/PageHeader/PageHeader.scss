@@ -1,5 +1,6 @@
 .page-header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     height: rem($page-header-height);
     width: 100%;
@@ -7,14 +8,15 @@
 
     &__icon {
         position: relative;
-        flex: 0;
-        height: 100%;
+        flex: auto;
+        // height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-left: rem(14px);
         margin-right: rem(14px);
         padding-right: rem(14px);
+        width: 100%;
 
         &::after {
             display: block;
@@ -40,7 +42,8 @@
     }
 
     &__logo {
-        width: rem(30px);
+        width: rem(80px);
+        height: auto;
     }
 
     &__back-icon {
@@ -51,6 +54,7 @@
 
     &__title {
         margin: 0;
+        text-align: center;
     }
 
     &__progress-bar {
@@ -73,6 +77,18 @@
 
         &--completed {
             background-color: $color-text;
+        }
+    }
+
+    .back-btn {
+        position: absolute;
+        left: -20px;
+        top: 0;
+        padding: 10px;
+        background: #292736;
+
+        .page-header__back-icon {
+            margin: 0;
         }
     }
 }

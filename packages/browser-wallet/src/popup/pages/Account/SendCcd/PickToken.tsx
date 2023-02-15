@@ -6,7 +6,7 @@ import { AccountTokens, contractBalancesFamily } from '@popup/store/token';
 import { TokenIdAndMetadata } from '@shared/storage/types';
 import { CCD_METADATA } from '@shared/constants/token-metadata';
 import { TokenIdentifier } from '@shared/utils/token-helpers';
-import CcdIcon from '@assets/svg/concordium.svg';
+import CcdIcon from '@assets/svg/logo-icon.svg';
 import DisplayToken from './DisplayToken';
 
 interface Props {

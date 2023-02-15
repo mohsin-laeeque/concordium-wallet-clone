@@ -1,6 +1,6 @@
 $account-page-actions-height: rem(36px);
 $account-page-details-height-expanded: rem(135px);
-$account-page-details-height-closed: rem(30px);
+$account-page-details-height-closed: rem(40px);
 $account-page-details-height: var(--details-height, $account-page-details-height-closed);
 
 .account-page {
@@ -20,8 +20,14 @@ $account-page-details-height: var(--details-height, $account-page-details-height
     &__hide {
         position: absolute;
         left: 0;
-        top: rem(2px);
+        top: rem(10px);
         z-index: 1;
+
+        svg {
+            path {
+                fill: #fff;
+            }
+        }
     }
 
     &__routes {
@@ -32,6 +38,8 @@ $account-page-details-height: var(--details-height, $account-page-details-height
         position: relative;
         overflow: overlay;
         @include transition(height);
+
+        background-color: #403c4b;
     }
 
     &__close {
@@ -49,7 +57,7 @@ $account-page-details-height: var(--details-height, $account-page-details-height
         right: 0;
         top: 0;
         margin-right: rem(8px);
-        margin-top: rem(5px);
+        margin-top: rem(10px);
         border: rem(1px) solid $color-success;
         border-radius: rem(15px);
         font-family: $font-family-mono;

@@ -1,16 +1,19 @@
-$entity-list-top-height: rem(25px);
+$entity-list-top-height: rem(50px);
 
 .entity-list {
-    background-color: $color-bg;
+    background-color: $color-text;
+    color: $color-bg;
 
     &__top {
         position: relative;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 48% 48%;
+        justify-content: space-between;
         align-items: center;
         height: $entity-list-top-height;
-        border: 1px solid $color-petroleum;
+        // border: 1px solid $color-petroleum;
         border-top: none;
+        padding: 12px;
 
         &--search-focus {
             grid-template-columns: auto rem(25px);
@@ -31,11 +34,12 @@ $entity-list-top-height: rem(25px);
     }
 
     &__search {
-        background-color: $color-bg;
+        background-color: #2b2638;
         border: none;
-        border-right: 1px solid $color-petroleum;
+        // border-right: 1px solid $color-petroleum;
         padding-right: rem(25px);
         color: $color-text;
+        border-radius: 5px;
 
         &:focus {
             outline: none;
@@ -66,6 +70,12 @@ $entity-list-top-height: rem(25px);
         align-items: center;
         overflow: hidden;
         color: $color-text;
+        background-color: #2b2638;
+        border-radius: 5px;
+        border: none;
+        // border-right: 1px solid $color-petroleum;
+        padding-right: rem(25px);
+        position: relative;
     }
 
     &__new-entity-text {
@@ -88,8 +98,9 @@ $entity-list-top-height: rem(25px);
     }
 
     &__no-matches {
-        padding: rem(7px) rem(15px);
-        border-bottom: 1px solid $color-petroleum;
+        padding: 0 rem(12px) rem(12px);
+        color: #000;
+        // border-bottom: 1px solid $color-petroleum;
     }
 }
 

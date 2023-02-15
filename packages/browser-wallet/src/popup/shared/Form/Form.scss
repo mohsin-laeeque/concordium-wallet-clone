@@ -16,10 +16,10 @@
 
     &__field {
         background-color: $color-input-bg;
-        font-size: rem(10px);
+        font-size: rem(12px);
         color: $color-text;
-        height: rem(32px);
-        border: rem(1px) solid $color-grey;
+        height: rem(35px);
+        border: rem(1px) solid $color-input-bg;
         border-radius: rem(5px);
         padding: rem(12px) rem(5px) rem(5px);
         width: 100%;

@@ -11,12 +11,12 @@ export const small: Dimensions = {
 
 // >= 1080p
 export const medium: Dimensions = {
-    width: 312,
+    width: 360,
     height: 528,
 };
 
 // >=1440p
 export const large: Dimensions = {
-    width: 354,
+    width: 420,
     height: 600, // Max allowed
 };

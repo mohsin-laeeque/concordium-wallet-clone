@@ -153,7 +153,7 @@ function Results() {
             <br />
             <br />
             <footer>
-                <p>*Smart contract index on the Concordium chain</p>
+                <p>*Smart contract index on the METAMUTO chain</p>
             </footer>
         </Container>
     );

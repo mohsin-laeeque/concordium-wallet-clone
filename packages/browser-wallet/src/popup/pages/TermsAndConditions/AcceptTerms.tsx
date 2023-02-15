@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
-import Logo from '@assets/svg/concordium.svg';
-import ConcordiumLetters from '@assets/svg/concordium-letters.svg';
+// import Logo from '@assets/svg/concordium.svg';
+import Logo from '@assets/svg/logo.svg';
+// import ConcordiumLetters from '@assets/svg/concordium-letters.svg';
 import { useTranslation } from 'react-i18next';
 import { SubmitHandler } from 'react-hook-form';
 import Form from '@popup/shared/Form';
@@ -42,7 +43,7 @@ export default function AcceptTerms({ children, onSubmit }: Props) {
         <div className="terms-and-conditions">
             <div className="terms-and-conditions__logos">
                 <Logo className="terms-and-conditions__logo" />
-                <ConcordiumLetters className="terms-and-conditions__concordium-letters" />
+                {/* <ConcordiumLetters className="terms-and-conditions__concordium-letters" /> */}
             </div>
             <div className="terms-and-conditions__description">{children}</div>
 

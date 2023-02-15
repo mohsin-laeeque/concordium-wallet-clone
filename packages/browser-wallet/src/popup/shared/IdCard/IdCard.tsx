@@ -8,10 +8,10 @@ import VerfifiedIcon from '@assets/svg/verified-stamp.svg';
 import RejectedIcon from '@assets/svg/rejected-stamp.svg';
 import CheckIcon from '@assets/svg/checkmark-blue.svg';
 import EditIcon from '@assets/svg/edit.svg';
-import IdentityIcon from '@assets/svg/identity.svg';
-import SuccessIcon from '@assets/svg/rounded-success.svg';
-import WarningIcon from '@assets/svg/rounded-warning.svg';
-import PendingIcon from '@assets/svg/rounded-pending.svg';
+// import IdentityIcon from '@assets/svg/identity.svg';
+// import SuccessIcon from '@assets/svg/rounded-success.svg';
+// import WarningIcon from '@assets/svg/rounded-warning.svg';
+// import PendingIcon from '@assets/svg/rounded-pending.svg';
 
 import Form from '../Form';
 import Submit from '../Form/Submit';
@@ -68,21 +68,21 @@ const EditableName = forwardRef<HTMLFormElement, EditNameProps>(({ name, onChang
 
 type IdentityStatus = 'pending' | 'confirmed' | 'rejected';
 
-function IdentityStatusIcon({ status }: { status: IdentityStatus }) {
-    let StatusIcon = PendingIcon;
-    if (status === 'rejected') {
-        StatusIcon = WarningIcon;
-    } else if (status === 'confirmed') {
-        StatusIcon = SuccessIcon;
-    }
+// function IdentityStatusIcon({ status }: { status: IdentityStatus }) {
+//     let StatusIcon = PendingIcon;
+//     if (status === 'rejected') {
+//         StatusIcon = WarningIcon;
+//     } else if (status === 'confirmed') {
+//         StatusIcon = SuccessIcon;
+//     }
 
-    return (
-        <div className="id-card__header-status-icon">
-            <IdentityIcon />
-            <StatusIcon />
-        </div>
-    );
-}
+//     return (
+//         <div className="id-card__header-status-icon">
+//             <IdentityIcon />
+//             <StatusIcon />
+//         </div>
+//     );
+// }
 
 type Props = {
     name: string;
@@ -121,7 +121,7 @@ export default function IdCard({ name, provider, status, onNameChange, className
             }}
         >
             <header className="id-card__header">
-                <IdentityStatusIcon status={status} />
+                {/* <IdentityStatusIcon status={status} /> */}
                 {t('id.header')}
                 {onNameChange && !isEditing && (
                     <Button clear className="id-card__edit-button" onClick={() => setIsEditing(true)}>

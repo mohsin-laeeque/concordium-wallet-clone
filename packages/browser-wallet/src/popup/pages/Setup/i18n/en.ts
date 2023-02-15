@@ -1,6 +1,6 @@
 const t = {
     intro: {
-        welcome: 'Welcome to the MetaMuto Wallet for web.',
+        welcome: 'Welcome to the MetaMuto Wallet for web extension.',
         description:
             'On the following pages, you will be guided through the process of setting up a new wallet or restoring an existing one.',
     },
@@ -52,8 +52,7 @@ const t = {
             descriptionP3: 'You can choose another network later in the Settings menu.',
         },
         restore: {
-            descriptionP1:
-                'Choose whether to recover your identities and accounts on the MetaMuto Mainnet or Testnet.',
+            descriptionP1: 'Choose whether to recover your identities and accounts on the MetaMuto Mainnet or Testnet.',
             descriptionP2: 'If you are unsure what to choose, select MetaMuto Mainnet.',
             descriptionP3: 'You can choose another network later in the Settings menu.',
         },

@@ -50,7 +50,7 @@ async function checkConnectedToTestnet(client) {
         .getCryptographicParameters(TESTNET_GENESIS_BLOCK_HASH.toString())
         .then((result) => {
             if (result === undefined || result?.value === null) {
-                window.alert('Check if your Concordium browser wallet is connected to testnet!');
+                window.alert('Check if your METAMUTO browser wallet is connected to testnet!');
                 return false;
             }
             return true;

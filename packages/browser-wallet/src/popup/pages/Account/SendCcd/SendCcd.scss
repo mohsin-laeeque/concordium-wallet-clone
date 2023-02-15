@@ -41,6 +41,7 @@ $error-spacing: rem(13.286px);
     &__pick-token {
         .ccd-icon {
             width: rem(20px);
+            height: auto;
         }
     }
 
@@ -62,7 +63,7 @@ $error-spacing: rem(13.286px);
         }
 
         &--error {
-            margin-bottom: 0;
+            // margin-bottom: 0;
 
             > p {
                 color: $color-error;

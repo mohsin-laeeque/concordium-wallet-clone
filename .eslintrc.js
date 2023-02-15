@@ -16,6 +16,7 @@ module.exports = {
         node: true,
     },
     rules: {
+        'no-unused-vars': 'off',
         'import/prefer-default-export': 0,
         'no-restricted-exports': 0,
         'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],

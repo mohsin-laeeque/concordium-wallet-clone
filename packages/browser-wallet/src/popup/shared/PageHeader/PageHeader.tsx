@@ -5,7 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import { ClassName } from 'wallet-common-helpers';
 
 import BackIcon from '@assets/svg/back-arrow.svg';
-import Logo from '@assets/svg/concordium.svg';
+// import Logo from '@assets/svg/concordium.svg';
+import Logo from '@assets/svg/logo.svg';
 import Button from '../Button';
 
 type BaseProps = ClassName & {
@@ -55,9 +56,16 @@ export default function PageHeader(props: Props) {
         <header className={clsx('page-header', className)}>
             <div className="page-header__icon">
                 {canGoBack ? (
-                    <Button className="flex" clear onClick={() => (backTo ? navigate(backTo) : navigate(-1))}>
-                        <BackIcon className="page-header__back-icon" />
-                    </Button>
+                    <>
+                        <Button
+                            className="flex back-btn"
+                            clear
+                            onClick={() => (backTo ? navigate(backTo) : navigate(-1))}
+                        >
+                            <BackIcon className="page-header__back-icon" />
+                        </Button>
+                        <Logo className="page-header__logo" />
+                    </>
                 ) : (
                     <Logo className="page-header__logo" />
                 )}

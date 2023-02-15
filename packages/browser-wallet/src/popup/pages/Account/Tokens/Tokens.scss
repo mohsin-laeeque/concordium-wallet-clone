@@ -9,11 +9,12 @@ $tokens-actions-height: rem(26px);
         width: 100%;
         grid-template-columns: 1fr 1fr 1fr;
         height: $tokens-actions-height;
+        background-color: #7ce2fd;
     }
 
     &__link {
         &:not(.active) {
-            color: rgba($color: $color-off-white, $alpha: 60%);
+            color: #000;
         }
     }
 
@@ -77,6 +78,7 @@ $tokens-actions-height: rem(26px);
         text-align: center;
         font-size: rem(8px);
         margin: rem(10px) auto;
-        width: 40%;
+
+        // width: 40%;
     }
 }

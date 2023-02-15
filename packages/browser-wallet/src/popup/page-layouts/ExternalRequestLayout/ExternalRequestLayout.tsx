@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
 import { absoluteRoutes } from '@popup/constants/routes';
-import Logo from '@assets/svg/concordium.svg';
+import Logo from '@assets/svg/logo-icon.svg';
 import Toast from '@popup/shared/Toast/Toast';
 
 import { useCredential } from '@popup/shared/utils/account-helpers';

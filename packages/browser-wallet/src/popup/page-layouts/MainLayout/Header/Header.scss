@@ -6,6 +6,7 @@
     &__bar,
     &__nav {
         background-color: $color-main-header;
+        color: #000;
         border-bottom: 1px solid $color-petroleum;
     }
 
@@ -27,7 +28,7 @@
             path {
                 @include transition(fill);
 
-                fill: $color-text;
+                fill: #000;
             }
         }
 
@@ -58,7 +59,7 @@
 
             path {
                 .main-layout-header--nav-open & {
-                    fill: $color-cta;
+                    fill: #000;
                 }
             }
         }
@@ -86,7 +87,7 @@
             width: rem(12px);
 
             path {
-                fill: $color-text;
+                fill: $color-bg;
             }
         }
     }
@@ -99,24 +100,26 @@
     }
 
     &__nav {
-        padding: 0 rem(15px);
-        text-align: center;
+        padding: 0 rem(0);
+        text-align: left;
     }
 
     &__nav-item {
         display: block;
-        color: $color-text;
+        color: #000;
         text-decoration: none;
         font-size: rem(14px);
-        padding: rem(10px) 0;
+        padding: rem(8px) rem(10px);
 
         &:not(.main-layout-header__nav-item--active) {
             font-weight: $font-weight-light;
         }
 
         &--active {
+            color: #8873e6;
+
             &:hover {
-                color: $color-text;
+                color: #8873e6;
             }
         }
 

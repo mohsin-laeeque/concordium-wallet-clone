@@ -63,7 +63,7 @@ export function ChooseNetwork() {
                             goToNext();
                         }}
                     >
-                        Concordium Mainnet
+                        METAMUTO Mainnet
                     </Button>
                     <Button
                         className="onboarding-setup__page-with-header__testnet-button"
@@ -73,7 +73,7 @@ export function ChooseNetwork() {
                             goToNext();
                         }}
                     >
-                        Concordium Testnet
+                        METAMUTO Testnet
                     </Button>
                 </div>
             </div>

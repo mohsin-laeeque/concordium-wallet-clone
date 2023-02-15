@@ -1,5 +1,5 @@
 const t = {
-    title: 'Your Concordium identity',
+    title: 'Your METAMUTO identity',
     abortExplanation:
         'The identity issuance was aborted. If you did not abort the process, please try again, or contact support.',
     successExplanation:

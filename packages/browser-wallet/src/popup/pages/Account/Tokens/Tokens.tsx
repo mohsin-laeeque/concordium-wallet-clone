@@ -6,7 +6,7 @@ import { useAtomValue } from 'jotai';
 
 import { absoluteRoutes } from '@popup/constants/routes';
 import TabBar from '@popup/shared/TabBar';
-import CcdIcon from '@assets/svg/concordium.svg';
+import CcdIcon from '@assets/svg/logo-icon.svg';
 import { useAccountInfo } from '@popup/shared/AccountInfoListenerContext';
 import { useSelectedCredential } from '@popup/shared/utils/account-helpers';
 import { TokenIdAndMetadata, WalletCredential } from '@shared/storage/types';

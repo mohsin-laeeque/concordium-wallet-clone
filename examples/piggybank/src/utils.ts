@@ -31,7 +31,7 @@ export const deposit = (account: string, index: bigint, subindex = 0n, amount = 
                 .catch(alert);
         })
         .catch(() => {
-            throw new Error('Concordium Wallet API not accessible');
+            throw new Error('METAMUTO Wallet API not accessible');
         });
 };
 
@@ -58,7 +58,7 @@ export const smash = (account: string, index: bigint, subindex = 0n) => {
                 .catch(alert);
         })
         .catch(() => {
-            throw new Error('Concordium Wallet API not accessible');
+            throw new Error('METAMUTO Wallet API not accessible');
         });
 };
 

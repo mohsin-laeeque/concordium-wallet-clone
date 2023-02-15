@@ -10,7 +10,7 @@ const t = {
         },
     },
     id: {
-        header: 'Concordium identity',
+        header: 'METAMUTO identity',
         pending: 'Pending verification with',
         confirmed: 'Verified by',
         rejected: 'Rejected by',

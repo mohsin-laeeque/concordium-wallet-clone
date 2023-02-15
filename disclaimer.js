@@ -29,7 +29,7 @@ const readInterface = readline.createInterface({
     console: false,
 });
 
-const header = 'Concordium Browser Wallet Third Party Licenses';
+const header = 'METAMUTO Browser Wallet Third Party Licenses';
 writeHeading(header, output, '=');
 
 readInterface.on('line', (line) => {
@@ -54,7 +54,7 @@ readInterface.on('line', (line) => {
     ) {
         output.write('\n');
         output.write(
-            'The following sets forth attribution notices for third party software that may be contained in portions of the Concordium Browser Wallet product.'
+            'The following sets forth attribution notices for third party software that may be contained in portions of the METAMUTO Browser Wallet product.'
         );
     } else {
         const lineWithNoSpacesAtEnd = line.replace(/\s*$/, '');

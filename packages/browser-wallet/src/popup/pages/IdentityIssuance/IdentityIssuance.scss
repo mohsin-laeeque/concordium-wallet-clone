@@ -36,16 +36,23 @@
     }
 
     &__provider-button {
-        color: $color-text;
-        background-color: $color-bg;
-        border: rem(1px) solid $color-cta;
+        color: $color-bg;
+        background-color: $color-text;
+
+        // border: rem(1px) solid $color-cta;
         margin-top: rem(10px);
-        font-size: rem(10px);
+        font-size: rem(12px);
+        font-weight: 500;
+        width: 100%;
+        height: 50px;
+        border-radius: 40px;
+        border: none;
 
         &:hover {
             &:not(:disabled) {
-                color: $color-text;
-                box-shadow: inset 0 0 rem(10px) rem(15px) rgb($color-hover / 15%);
+                color: $color-bg;
+
+                // box-shadow: inset 0 0 rem(10px) rem(15px) rgb($color-hover / 15%);
             }
         }
     }

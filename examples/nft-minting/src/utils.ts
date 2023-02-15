@@ -57,7 +57,7 @@ export const createCollection = (address: string) => {
                     .catch((e) => alert(e.message));
             })
             .catch(() => {
-                throw new Error('Concordium Wallet API not accessible');
+                throw new Error('METAMUTO Wallet API not accessible');
             });
     });
 };
@@ -115,7 +115,7 @@ export const mint = (account: string, id: string, url: string, index: bigint, su
                     );
             })
             .catch(() => {
-                throw new Error('Concordium Wallet API not accessible');
+                throw new Error('METAMUTO Wallet API not accessible');
             });
     });
 };

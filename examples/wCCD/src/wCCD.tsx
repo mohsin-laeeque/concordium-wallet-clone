@@ -189,7 +189,7 @@ export default function wCCD(props: WalletConnectionProps) {
     return (
         <>
             <h1 className="header">CCD &#8644; wCCD Smart Contract</h1>
-            <h3>Wrap and unwrap your CCDs and wCCDs on the Concordium Testnet</h3>
+            <h3>Wrap and unwrap your CCDs and wCCDs on the METAMUTO Testnet</h3>
             <div style={blackCardStyle}>
                 <div>
                     <WalletConnectionTypeButton

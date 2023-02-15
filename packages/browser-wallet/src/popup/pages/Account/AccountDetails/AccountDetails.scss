@@ -5,12 +5,13 @@
     align-items: center;
     height: $account-page-details-height;
     font-size: rem(10px);
-    padding: 0 rem(10px);
+    padding: 0 rem(0);
     word-break: break-all;
     background-color: $color-bg;
     text-align: center;
     width: 100%;
-    border-bottom: 1px solid $color-petroleum;
+
+    // border-bottom: 1px solid $color-petroleum;
     overflow: hidden;
     @include transition(height);
 
@@ -24,7 +25,7 @@
     }
 
     &__address {
-        margin-top: rem(2px);
+        margin-top: rem(10px);
     }
 
     &__id {
@@ -40,6 +41,9 @@
 
         .account-page-details--expanded & {
             opacity: 1;
+            border-top: 1px solid #4e4e4e;
+            padding: 0 1rem;
+            margin-top: 10px;
         }
     }
 
@@ -59,15 +63,16 @@
 
     &__stamp {
         position: absolute;
-        left: 50%;
-        top: calc(#{$account-page-details-height-expanded} / 2);
-        transform: translate(-50%, -50%);
+        right: 10px;
+        bottom: 10px;
+
+        // transform: translate(-50%, -50%);
         height: rem(60px);
         opacity: 0;
         @include transition(opacity);
 
         .account-page-details--expanded & {
-            opacity: 0.1;
+            opacity: 0.5;
 
             .dark & {
                 opacity: 0.5;
